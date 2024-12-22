@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="302.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp5.ProfesseursDeDepartementController">
+   <children>
+      <TableView fx:id="professeurTableView" prefHeight="302.0" prefWidth="722.0">
+         <columns>
+            <TableColumn fx:id="idProfProfesseurTableColumn" prefWidth="75.0" text="id_prof" />
+            <TableColumn fx:id="nomProfesseurTableColumn" prefWidth="75.0" text="nom" />
+            <TableColumn fx:id="prenomProfesseurTableColumn" prefWidth="75.0" text="prenom" />
+            <TableColumn fx:id="cinProfesseurTableColumn" prefWidth="75.0" text="cin" />
+            <TableColumn fx:id="adresseProfesseurTableColumn" prefWidth="75.0" text="adresse" />
+            <TableColumn fx:id="emailProfesseurTableColumn" prefWidth="75.0" text="email" />
+            <TableColumn fx:id="telephoneProfesseurTableColumn" prefWidth="75.0" text="telephone" />
+            <TableColumn fx:id="dateRecrutementProfesseurTableColumn" prefWidth="106.0" text="date_recrutement" />
+            <TableColumn fx:id="idDepartProfesseurTableColumn" prefWidth="75.0" text="id_depart" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

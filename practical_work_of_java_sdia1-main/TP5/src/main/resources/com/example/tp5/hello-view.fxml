@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp5.MainController">
+   <children>
+      <TabPane prefHeight="549.0" prefWidth="751.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Departements">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="414.0" prefWidth="667.0">
+                     <children>
+                        <TableView fx:id="departementTableView" layoutX="18.0" layoutY="117.0" prefHeight="385.0" prefWidth="717.0">
+                           <columns>
+                              <TableColumn fx:id="idDepartDpartementTableColumn" prefWidth="75.0" text="id_depart" />
+                              <TableColumn fx:id="nomDepartementTableColumn" prefWidth="75.0" text="nom" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="supprimerDepartementButton" layoutX="447.0" layoutY="81.0" mnemonicParsing="false" onAction="#supprimerDepartementAction" text="Supprimer" />
+                        <Button fx:id="modifierDepartementButton" layoutX="375.0" layoutY="81.0" mnemonicParsing="false" onAction="#modifierDepartementAction" text="Modifier" />
+                        <Button fx:id="ajouterDepartementButton" layoutX="309.0" layoutY="81.0" mnemonicParsing="false" onAction="#ajouterDepartementAction" text="Ajouter" />
+                        <Button fx:id="afficherProfesseurDeDepartementButton" layoutX="530.0" layoutY="81.0" mnemonicParsing="false" onAction="#afficherProfesseurDeDepartementAction" text="Afficher professeur de departement" />
+                        <TextField fx:id="idDepartDepartementTextField" layoutX="131.0" layoutY="14.0" />
+                        <Label layoutX="18.0" layoutY="18.0" text="Id departement" />
+                        <TextField fx:id="nomDepartementTextField" layoutX="131.0" layoutY="46.0" />
+                        <Label layoutX="18.0" layoutY="50.0" text="Nom : " />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Professeurs">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="677.0">
+                     <children>
+                        <TableView fx:id="professeurTableView" layoutX="14.0" layoutY="205.0" prefHeight="301.0" prefWidth="722.0">
+                           <columns>
+                              <TableColumn fx:id="idProfProfesseurTableColumn" prefWidth="75.0" text="id_prof" />
+                              <TableColumn fx:id="nomProfesseurTableColumn" prefWidth="75.0" text="nom" />
+                              <TableColumn fx:id="prenomProfesseurTableColumn" prefWidth="75.0" text="prenom" />
+                              <TableColumn fx:id="cinProfesseurTableColumn" prefWidth="75.0" text="cin" />
+                              <TableColumn fx:id="adresseProfesseurTableColumn" prefWidth="75.0" text="adresse" />
+                              <TableColumn fx:id="emailProfesseurTableColumn" prefWidth="75.0" text="email" />
+                              <TableColumn fx:id="telephoneProfesseurTableColumn" prefWidth="75.0" text="telephone" />
+                              <TableColumn fx:id="dateRecrutementProfesseurTableColumn" prefWidth="106.0" text="date_recrutement" />
+                              <TableColumn fx:id="idDepartProfesseurTableColumn" prefWidth="75.0" text="id_depart" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="supprimerProfesseurButton" layoutX="499.0" layoutY="170.0" mnemonicParsing="false" onAction="#supprimerProfesseurAction" text="Supprimer" />
+                        <Button fx:id="modifierProfesseurButton" layoutX="426.0" layoutY="170.0" mnemonicParsing="false" onAction="#modifierProfesseurAction" text="Modifier" />
+                        <Button fx:id="ajouterProfesseurButton" layoutX="360.0" layoutY="170.0" mnemonicParsing="false" onAction="#ajouterProfesseurAction" text="Ajouter" />
+                        <Label layoutX="16.0" layoutY="174.0" text="Rechercher" />
+                        <Button fx:id="affectuerAuDepartementButton" layoutX="582.0" layoutY="170.0" mnemonicParsing="false" onAction="#affecterAuDepartementProfesseurAction" text="Affectuer au departement" />
+                        <Label layoutX="12.0" layoutY="17.0" text="Id professeur :" />
+                        <Label layoutX="12.0" layoutY="74.0" text="Prenom :" />
+                        <Label layoutX="12.0" layoutY="45.0" text="Nom :" />
+                        <Label layoutX="12.0" layoutY="103.0" text="Cin :" />
+                        <Label layoutX="13.0" layoutY="132.0" text="Id departement :" />
+                        <TextField fx:id="cinProfesseurTextField" layoutX="117.0" layoutY="99.0" />
+                        <TextField fx:id="idDepartProfesseurTextField" layoutX="117.0" layoutY="128.0" />
+                        <TextField fx:id="prenomProfesseurTextField" layoutX="117.0" layoutY="70.0" />
+                        <TextField fx:id="nomProfesseurTextField" layoutX="117.0" layoutY="41.0" />
+                        <TextField fx:id="idProfPrefesseurTextField" layoutX="117.0" layoutY="13.0" />
+                        <TextField fx:id="rechercherProfesseurTextField" layoutX="117.0" layoutY="170.0" />
+                        <Label layoutX="306.0" layoutY="19.0" text="Adresse :" />
+                        <Label layoutX="307.0" layoutY="76.0" text="Telephone :" />
+                        <Label layoutX="307.0" layoutY="47.0" text="Email :" />
+                        <Label layoutX="308.0" layoutY="107.0" text="Date recrutement :" />
+                        <TextField fx:id="dateRecrutementProfesseurTextField" layoutX="429.0" layoutY="101.0" />
+                        <TextField fx:id="telephoneProfesseurTextField" layoutX="429.0" layoutY="72.0" />
+                        <TextField fx:id="emailProfesseurTextField" layoutX="429.0" layoutY="43.0" />
+                        <TextField fx:id="adresseProfesseurTextField" layoutX="429.0" layoutY="15.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
